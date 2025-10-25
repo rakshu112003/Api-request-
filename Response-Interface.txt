@@ -1,0 +1,47 @@
+export interface JSONSchema {
+    method:          string;
+    args:            Args;
+    data:            string;
+    headers:         Headers;
+    path:            string;
+    isBase64Encoded: boolean;
+}
+
+export interface Args {
+}
+
+export interface Headers {
+    accept:                      string;
+    "accept-encoding":           string;
+    "accept-language":           string;
+    "cdn-loop":                  string;
+    host:                        string;
+    "netlify-agent-category":    string;
+    "netlify-invocation-source": string;
+    origin:                      string;
+    priority:                    string;
+    referer:                     string;
+    "sec-ch-ua":                 string;
+    "sec-ch-ua-mobile":          string;
+    "sec-ch-ua-platform":        string;
+    "sec-fetch-dest":            string;
+    "sec-fetch-mode":            string;
+    "sec-fetch-site":            string;
+    traceparent:                 string;
+    "user-agent":                string;
+    "x-country":                 string;
+    "x-forwarded-for":           string;
+    "x-forwarded-proto":         string;
+    "x-language":                string;
+    "x-nf-account-id":           string;
+    "x-nf-account-tier":         string;
+    "x-nf-client-connection-ip": string;
+    "x-nf-deploy-context":       string;
+    "x-nf-deploy-id":            string;
+    "x-nf-deploy-published":     string;
+    "x-nf-geo":                  string;
+    "x-nf-request-id":           string;
+    "x-nf-request-start":        string;
+    "x-nf-site-id":              string;
+    "x-nf-trace-span-id":        string;
+}
